@@ -4,8 +4,14 @@
 # ignore jetbrains project
 /.idea
 
+# ignore downloaded posters
+/posters
+
 # ignore sqlite database files
 *.db
+
+# ignore generated page
+/index.html
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

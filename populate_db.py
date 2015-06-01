@@ -28,7 +28,8 @@ movies = [('Super Troopers', 'tt0247745', 'https://www.youtube.com/watch?v=2-9D2
           ('Office Space', 'tt0151804', 'https://www.youtube.com/watch?v=_IwzZYRejZQ'),
           ('Snatch', 'tt0208092', 'https://www.youtube.com/watch?v=ni4tEtuTccc'),
           ('The Empire Strikes Back', 'tt0080684', 'https://www.youtube.com/watch?v=96v4XraJEPI'),
-          ('Jurassic Park', 'tt0107290', 'https://www.youtube.com/watch?v=Bim7RtKXv90')
+          ('Jurassic Park', 'tt0107290', 'https://www.youtube.com/watch?v=Bim7RtKXv90'),
+          ('The Princess Bride', 'tt0093779', 'https://www.youtube.com/watch?v=VYgcrny2hRs')
           ]
 
 # Stage insertion of movie metadata into database

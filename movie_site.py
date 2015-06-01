@@ -28,7 +28,7 @@ movie_tile_template = '''
         </div>
         <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">{movie_title}<i class="mdi-navigation-more-vert right"></i></span>
-            <a class="waves-effect waves-light btn modal-trigger" href="#trailer" data-trailer-youtube-id="{trailer_youtube_id}" id="trailer_button">Watch Trailer</a>
+            <p><a class="waves-effect waves-light btn modal-trigger" href="#trailer" data-trailer-youtube-id="{trailer_youtube_id}" id="trailer_button">Watch Trailer</a></p>
         </div>
         <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">{movie_title}<i class="mdi-navigation-close right"></i></span>
@@ -43,6 +43,8 @@ movie_tile_template = '''
 </div>
 '''
 
+
+# Function for creating dropdown content. Takes array of Movies as input
 def create_dropdown_content(movies):
     content = ''
     count = 0
@@ -55,6 +57,7 @@ def create_dropdown_content(movies):
     return content
 
 
+# Function for creating tile content. Takes array of Movies as input
 def create_movie_tiles_content(movies):
     # The HTML content for this section of the page
     content = ''

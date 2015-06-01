@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """"""
 import sqlite3
-import os.path
+import os
 import movie_site
 import media
 
@@ -9,6 +9,10 @@ import media
 if not os.path.isfile('db/movies.db'):
     print("Database file not present, exiting.")
     exit()
+
+# Check if posters directory exists. Create if not
+if not os.path.exists('posters'):
+    os.makedirs('posters')
 
 # Connect to sqlite db file
 conn = sqlite3.connect('db/movies.db')
