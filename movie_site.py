@@ -1,4 +1,4 @@
-"""Module for generating movie site."""
+"""movite_site.py: Module for generating movie site."""
 
 import webbrowser
 import os
@@ -27,7 +27,9 @@ movie_tile_template = '''
             <img class="activator" src="{poster_image_url}" width="220">
         </div>
         <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">{movie_title}<i class="mdi-navigation-more-vert right"></i></span>
+            <span class="card-title activator grey-text text-darken-4">
+                {movie_title}<i class="mdi-navigation-more-vert right"></i>
+            </span>
             <p><a class="waves-effect waves-light btn modal-trigger" href="#trailer" data-trailer-youtube-id="{trailer_youtube_id}" id="trailer_button">Watch Trailer</a></p>
         </div>
         <div class="card-reveal">

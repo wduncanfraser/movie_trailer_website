@@ -1,5 +1,6 @@
 #!/usr/bin/env python
-""""""
+"""Script for importing movie metadata from database and calling movie_site.open_movies_page to generate site."""
+
 import sqlite3
 import os
 import movie_site
