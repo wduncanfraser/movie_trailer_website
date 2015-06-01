@@ -38,7 +38,6 @@
             $("#trailer_modal_video-container").empty().append('<iframe src="http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1" frameborder="0" allowfullscreen></iframe>');
         });
     </script>
-    <!--Navbar dropdown listing movies-->
     <!-- Trailer Modal Structure -->
     <div id="trailer" class="modal">
         <div class="modal-content">
@@ -49,21 +48,44 @@
             <a href="#!" class="modal-action modal-close waves-effect waves-light btn" id="trailer_modal-close">Close</a>
         </div>
     </div>
+    <!--Navbar dropdown listing movies-->
+    <ul id='nav_movielist' class='dropdown-content'>
+        
+<li><a href="#movie_0">Gattaca</a></li>
+
+<li><a href="#movie_1">Jurassic Park</a></li>
+
+<li><a href="#movie_2">Office Space</a></li>
+
+<li><a href="#movie_3">Serenity</a></li>
+
+<li><a href="#movie_4">Shaun of the Dead</a></li>
+
+<li><a href="#movie_5">Snatch</a></li>
+
+<li><a href="#movie_6">Super Troopers</a></li>
+
+<li><a href="#movie_7">The Empire Strikes Back</a></li>
+
+<li><a href="#movie_8">The Gods Must Be Crazy</a></li>
+
+<li><a href="#movie_9">Zombieland</a></li>
+
+    </ul>
     <!--Site Contents-->
     <div class="navbar-fixed">
         <nav class="teal lighten-2">
             <div class="nav-wrapper container">
                 <a href="#" class="brand-logo">Duncan's Favorite Movies</a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="dropdown-button" href="#!" data-activates="nav_dropdown">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                    <li><a class="dropdown-button" data-beloworigin="true" data-constrainwidth="false" href="#!" data-activates="nav_movielist">Movie List<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
                 </ul>
             </div>
         </nav>
     </div>
     <div class="container">
         <div class="row">
-            
-<div class="col s4">
+<div class="col s4" id="movie_0">
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="http://ia.media-imdb.com/images/M/MV5BNzQxMzU3OTQwNF5BMl5BanBnXkFtZTYwNDUyNTE5._V1_SX300.jpg" width="220">
@@ -84,7 +106,7 @@
     </div>
 </div>
 
-<div class="col s4">
+<div class="col s4" id="movie_1">
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="http://ia.media-imdb.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_SX300.jpg" width="220">
@@ -105,7 +127,7 @@
     </div>
 </div>
 
-<div class="col s4">
+<div class="col s4" id="movie_2">
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="http://ia.media-imdb.com/images/M/MV5BOTA5MzQ3MzI1NV5BMl5BanBnXkFtZTgwNTcxNTYxMTE@._V1_SX300.jpg" width="220">
@@ -125,8 +147,8 @@
         </div>
     </div>
 </div>
-
-<div class="col s4">
+</div><div class="row">
+<div class="col s4" id="movie_3">
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="http://ia.media-imdb.com/images/M/MV5BMTI0NTY1MzY4NV5BMl5BanBnXkFtZTcwNTczODAzMQ@@._V1_SX300.jpg" width="220">
@@ -147,7 +169,7 @@
     </div>
 </div>
 
-<div class="col s4">
+<div class="col s4" id="movie_4">
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="http://ia.media-imdb.com/images/M/MV5BMTU2NjA0NDk0NV5BMl5BanBnXkFtZTcwOTA0OTQzMw@@._V1_SX300.jpg" width="220">
@@ -168,7 +190,7 @@
     </div>
 </div>
 
-<div class="col s4">
+<div class="col s4" id="movie_5">
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="http://ia.media-imdb.com/images/M/MV5BMTk5NzE0MDQyNl5BMl5BanBnXkFtZTcwNzk4Mjk3OA@@._V1_SX300.jpg" width="220">
@@ -188,8 +210,8 @@
         </div>
     </div>
 </div>
-
-<div class="col s4">
+</div><div class="row">
+<div class="col s4" id="movie_6">
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="http://ia.media-imdb.com/images/M/MV5BMTY1MTExMTE2M15BMl5BanBnXkFtZTYwMDI2OTE5._V1_SX300.jpg" width="220">
@@ -210,7 +232,7 @@
     </div>
 </div>
 
-<div class="col s4">
+<div class="col s4" id="movie_7">
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="http://ia.media-imdb.com/images/M/MV5BMjE2MzQwMTgxN15BMl5BanBnXkFtZTcwMDQzNjk2OQ@@._V1_SX300.jpg" width="220">
@@ -231,7 +253,7 @@
     </div>
 </div>
 
-<div class="col s4">
+<div class="col s4" id="movie_8">
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="http://ia.media-imdb.com/images/M/MV5BMTI2ODYxNzM3N15BMl5BanBnXkFtZTcwNDMwODUyMQ@@._V1_SX300.jpg" width="220">
@@ -251,8 +273,8 @@
         </div>
     </div>
 </div>
-
-<div class="col s4">
+</div><div class="row">
+<div class="col s4" id="movie_9">
     <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="http://ia.media-imdb.com/images/M/MV5BMTU5MDg0NTQ1N15BMl5BanBnXkFtZTcwMjA4Mjg3Mg@@._V1_SX300.jpg" width="220">
@@ -272,8 +294,7 @@
         </div>
     </div>
 </div>
-
-        </div>
+</div>
     </div>
 
 </body>
