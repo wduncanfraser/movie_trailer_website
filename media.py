@@ -16,8 +16,12 @@ class Movie(object):
         response = urllib.urlopen("http://www.omdbapi.com/?i=" + self.imdb_id + "&plot=short&r=json")
         movie_json = json.loads(response.read())
 
-        self.rating = movie_json['Rated']
         self.plot = movie_json['Plot']
+        self.genre = movie_json['Genre']
+        self.year = movie_json['Year']
+        self.runtime = movie_json['Runtime']
+        self.rating = movie_json['Rated']
+        self.imdb_score = movie_json['imdbRating']
         self.poster_image_url = movie_json['Poster']
 
     def show_trailer(self):

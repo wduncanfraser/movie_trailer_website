@@ -2,7 +2,7 @@
 """"""
 import sqlite3
 import os.path
-import fresh_tomatoes
+import movie_site
 import media
 
 # Check if db file exists. Exit if not found.
@@ -18,8 +18,8 @@ c = conn.cursor()
 movies = []
 
 # Query DB for all movie entries. Append each entry to movies list
-for row in c.execute('SELECT * from Movie'):
+for row in c.execute('SELECT * from Movie ORDER BY name'):
     movies.append(media.Movie(row[0], row[1], row[2]))
 
 # Pass movie list to fresh_tomatoes
-fresh_tomatoes.open_movies_page(movies)
+movie_site.open_movies_page(movies)

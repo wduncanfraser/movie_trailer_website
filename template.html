@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Duncan's Favorite Movies</title>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <style type="text/css" media="screen">
+
+    </style>
+</head>
+
+<body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        // Initialize modal
+        $(document).ready(function(){{
+            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+            $('.modal-trigger').leanModal();
+        }});
+        // Pause the video when the modal is closed
+        $(document).on('click', '#trailer_modal-close, #lean-overlay', function (event) {{
+            // Remove the src so the player itself gets removed, as this is the only
+            // reliable way to ensure the video stops playing in IE
+            $("#trailer_modal_video-container").empty();
+        }});
+        // Start playing the video whenever the trailer modal is opened
+        $(document).on('click', '#trailer_button', function (event) {{
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id');
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+
+            $("#trailer_modal_video-container").empty().append('<iframe src="http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1" frameborder="0" allowfullscreen></iframe>');
+        }});
+    </script>
+    <!--Navbar dropdown listing movies-->
+    <!-- Trailer Modal Structure -->
+    <div id="trailer" class="modal">
+        <div class="modal-content">
+            <div class="video-container no-controls" id="trailer_modal_video-container">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-light btn" id="trailer_modal-close">Close</a>
+        </div>
+    </div>
+    <!--Site Contents-->
+    <div class="navbar-fixed">
+        <nav class="teal lighten-2">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">Duncan's Favorite Movies</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-button" href="#!" data-activates="nav_dropdown">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row">
+            {movie_tiles}
+        </div>
+    </div>
+
+</body>
+</html>

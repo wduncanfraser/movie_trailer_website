@@ -24,7 +24,11 @@ movies = [('Super Troopers', 'tt0247745', 'https://www.youtube.com/watch?v=2-9D2
           ('Gattaca', 'tt0119177', 'https://www.youtube.com/watch?v=BpzVFdDeWyo'),
           ('Serenity', 'tt0379786', 'https://www.youtube.com/watch?v=6nEAlpTb4tk'),
           ('Zombieland', 'tt1156398', 'https://www.youtube.com/watch?v=LzQ66p8Vfdk'),
-          ('The Gods Must Be Crazy', 'tt0080801', 'https://www.youtube.com/watch?v=GorHLQ-jLRQ')
+          ('The Gods Must Be Crazy', 'tt0080801', 'https://www.youtube.com/watch?v=GorHLQ-jLRQ'),
+          ('Office Space', 'tt0151804', 'https://www.youtube.com/watch?v=_IwzZYRejZQ'),
+          ('Snatch', 'tt0208092', 'https://www.youtube.com/watch?v=ni4tEtuTccc'),
+          ('The Empire Strikes Back', 'tt0080684', 'https://www.youtube.com/watch?v=96v4XraJEPI'),
+          ('Jurassic Park', 'tt0107290', 'https://www.youtube.com/watch?v=Bim7RtKXv90')
           ]
 
 # Stage insertion of movie metadata into database
