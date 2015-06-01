@@ -1,3 +1,9 @@
+# Ignore OS X .DS_Store
+.DS_Store
+
+# ignore jetbrains project
+/.idea
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
