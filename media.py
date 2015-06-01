@@ -22,7 +22,7 @@ class Movie(object):
 
         # Download movie posters locally
         # IMDB does not allow hotlinking of images
-        f = open('posters/' + self.title + '.jpg', 'wb')
+        f = open('posters/' + self.imdb_id + '.jpg', 'wb')
         f.write(urllib.urlopen(movie_json['Poster']).read())
         f.close()
 
